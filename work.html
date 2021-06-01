@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Organización de adopción de gatos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/cat_icon_138789.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/cat_icon_138789.png">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="index.html">
+                <span class="iconify" data-icon="emojione:smiling-cat-face-with-heart-eyes" data-inline="false"></span>
+                <span class="text-dark h4">Adopta</span> <span class="text-danger h4">ME</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                       <li class="nav-item">
+                            <a class="nav-link btn-outline-danger rounded-pill px-2" href="index.html">Principal</a>
+						<!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-danger rounded-pill px-2" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-danger rounded-pill px-2" href="work.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-danger rounded-pill px-2" href="pricing.html">Gatos en adopción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-danger rounded-pill px-2" href="contact.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-danger'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-danger'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-danger'></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h1 display-3 pb-5 semi-bold-600 typo-space-line-center">Eventos de adopción</h1>
+                <div class= "banner-banner">
+                <h3 class="h3 pb-2 regular-400" >Todos los fines de semana nos encontramos en un parque distinto</h3>
+                <p class="banner-body pb-2 light-300 " >
+                 
+                    Realizamos eventos de adopción para que cada gatito pueda encontrar un hogar. Cada fin de semana nos acercamos
+                    a un parque diferente y una vez al mes abrimos nuestras puertas para que puedas conocer a todos nuestros gatitos.
+                  
+                </p>
+               <a href="contact.html"><button type="submit" class="btn rounded-pill btn-outline-dark px-4 me-4 light-300">Consultas</button></a>
+             <a href="about.html"><button type="submit" class="btn rounded-pill btn-danger text-dark px-4 light-300">Quienes Somos</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+    <section class="container py-5">
+        <div class="row justify-content-center my-5">
+            <div class="filter-btns shadow-md rounded-pill text-center col-auto">
+                <a class="filter-btn btn rounded-pill btn-outline-danger border-0 m-md-2 px-md-4 active" data-filter=".project" href="#">Todos</a>
+                <a class="filter-btn btn rounded-pill btn-outline-danger border-0 m-md-2 px-md-4" data-filter=".business" href="#">Abril</a>
+                <a class="filter-btn btn rounded-pill btn-outline-danger border-0 m-md-2 px-md-4" data-filter=".marketing" href="#">Marzo</a>
+                <a class="filter-btn btn rounded-pill btn-outline-danger border-0 m-md-2 px-md-4" data-filter=".social" href="#">Febrero</a>
+                <a class="filter-btn btn rounded-pill btn-outline-danger border-0 m-md-2 px-md-4" data-filter=".graphic" href="#">Enero</a>
+            </div>
+        </div>
+
+        <div class="row projects gx-lg-5">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project business">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./assets/img/bench-2178847_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Lagos de Palermo</h5>
+                        <p class="card-text light-300 text-dark">
+                            Evento a realizar en los Lagos de Palermo. Te esperamos el 20 de Abril entre las 14 y las 18 hs.
+                            Todos los gatos necesitan un hogar. ¡Contamos con vos!
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                              Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project business">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/landscape-3076834_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Parque Centenario</h5>
+                        <p class="card-text light-300 text-dark">
+                            El 12 de abril en el parque centenario de adoptaron 34 gatos. Queremos agradecer a toda la comunidad por hacer realidad este sueño.
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                            Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing ">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/marguerite-1507550_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Parque de las Margaritas</h5>
+                        <p class="card-text light-300 text-dark">
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiatdolore eu fugiat nulla pariatur.
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                            Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/waters-3102729_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Laguna de Chascomús</h5>
+                        <p class="card-text light-300 text-dark">
+                            Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                            Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project social">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/fields-1589613_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Plaza Alem</h5>
+                        <p class="card-text light-300 text-dark">
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                            Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project social">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/tree-3229512_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Parque Sarmiento</h5>
+                        <p class="card-text light-300 text-dark">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                            Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project graphic">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/snow-616319_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Parque Rivadavia</h5>
+                        <p class="card-text light-300 text-dark">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                            Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project graphic">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/mountain-ranges-1590013_1920.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Plaza de Mayo</h5>
+                        <p class="card-text light-300 text-dark">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="text-decoration-none text-danger light-300">
+                            Seguir leyendo <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+          
+        </div>
+
+    </section>
+    <!-- End Our Work -->
+
+    <!-- Start Footer -->
+    <footer class="bg-dark pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="iconify" data-icon="emojione:smiling-cat-face-with-heart-eyes" data-inline="false"></span>
+                        <span class="text-light h5">Adopta</span><span class="text-danger h5 semi-bold-600">ME</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro centro de adopción</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+								href="index.html">Principal</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="work.html">Eventos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+								href="pricing.html">Gatos en adopción</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+							href="mailto:info@company.com">info@adoptame.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-danger py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 AdoptaME. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+							href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack  y SS</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

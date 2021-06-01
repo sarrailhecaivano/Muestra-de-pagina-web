@@ -1,0 +1,570 @@
+<!DOCTYPE html>     <!----- definición de html 5 -->          
+<html lang="es"> 	<!----- definición del lenguaje -->  
+					<!------Inicio del  HEAD -->
+<head>
+  <title>Organización de adopción de gatos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/cat_icon_138789.png.png">
+	<!----- icono para apple y safari --> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/cat_icon_138789.png">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+	    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<!-----
+.text-primary  		azul
+.text-secondary		gris
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste
+.text-light			blanco
+.text-dark			negro
+.text-muted			gris oscuro
+.text-white			gris claro
+-->
+<!------------------------------------------------------------------ Fin del  HEAD -->
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+	
+	<!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand h1" href="index.html">
+            <span class="iconify" data-icon="emojione:smiling-cat-face-with-heart-eyes" data-inline="false"></span>
+          
+        </a>
+				<!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+
+	       <span class="text-dark h4">Adopta-</span><span class="text-danger h4">ME</span></a>
+			
+			<!--	boton de hamburguesa --> 
+  	          <button class="navbar-toggler border-0" 
+				type="button" data-bs-toggle="collapse" 
+				data-bs-target="#navbar-toggler-success" 
+				aria-controls="navbarSupportedContent" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+				</span>
+            </button>
+		<!------------------------------------------- Opciones del Menu		-->
+		<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+		id="navbar-toggler-success">
+		
+		<!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+  		              <div class="flex-fill mx-xl-5 mb-2">
+				<!--	  mx=para clases que establecen tanto *-lefty*-right-->
+ 	                   <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+					<!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-danger rounded-pill px-2" href="index.html">Principal</a>
+						<!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-danger rounded-pill px-2" href="about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-danger rounded-pill px-2" href="work.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-danger rounded-pill px-2" href="pricing.html">Gatos en adopción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-danger rounded-pill px-2" href="contact.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+    
+<!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+
+            </div>
+        </div>
+    </nav>
+<!----------------------------------------------------------- Fin de los iconos del menu
+
+    <!-- Close Header -->
+ <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+    <div class="banner-wrapper bg-light">
+        <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
+
+            <!-- Start slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></li>
+                </ol>
+ <!-- class="active" Se requiere un elemento activo inicial
+La .activeclase debe agregarse a una de las diapositivas. De lo contrario, el carrusel no será visible. -->
+				
+                <div class="carousel-inner">
+				
+<!-- Primer elemento del carrousel 
+Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->				
+
+                    <div class="carousel-item active">
+
+                 <div class="py-5 row d-flex align-items-center">
+                  <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                    <h1 class="banner-heading h1 text-warning display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line1">
+					<!--typo-space-line = clase configurada en el css 
+					display-3 = <H3> 
+					Where property is one of:
+
+						m - for classes that set margin
+						p - for classes that set padding
+						Where sides is one of:
+
+						t - for classes that set margin-top or padding-top
+						b - for classes that set margin-bottom or padding-bottom
+						l - for classes that set margin-left or padding-left
+						r - for classes that set margin-right or padding-right
+						x - for classes that set both *-left and *-right
+						y - for classes that set both *-top and *-bottom
+						blank - for classes that set a margin or padding on all 4 sides of the element
+						ejemplo: 
+						<div class="mx-auto" style="width: 200px;">
+						  Centered element
+						</div>
+					
+					-->
+                                    Gatos desparasitados y vacunados. </h1>
+                                <p class="banner-body text-muted py-3 mx-0 px-0">
+                                    Podés hablar con nuestros veterinarios. <a rel="nofollow" 
+									href="https://google.com" target="_parent" text-warning >aqui</a>.
+                              </p>
+                                <a class="banner-button btn rounded-pill btn-outline-warning btn-lg px-4" 
+								href="pricing.html" role="button">Adoptar</a>
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->
+
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 text-warning display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Trabajamos con adopción responsable
+                                </h1>
+                                <p class="banner-body text-muted py-3">
+                                    Si tenés ventanas en altura debés poner protecciones adecuadas, podés consultar <a rel="nofollow" 
+									href="https://www.google.com/search?q=protecciones+para+gatos&rlz=1C1CHBF_esAR843AR843&oq=protecciones+&aqs=chrome.1.69i57j0i20i263j0l8.3215j0j4&sourceid=chrome&ie=UTF-8" target="_parent">aqui</a>.
+                                </p>
+                                <a class="banner-button btn rounded-pill btn-outline-warning btn-lg px-4" 
+					href="about.html" role="button">Conocenos</a>
+					 <!--role="button" indica que un boton no apunta a una url sino que hace otra cosa-->	
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->					
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 text-warning display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Conocé a nuestros gatitos los fines de semana.
+                                </h1>
+                                <p class="banner-body text-muted py-3">
+                                    Realizamos eventos de adopción todos los fines de semana. Estamos siempre en distintos parques. 
+                                </p>
+                                <a class="banner-button btn rounded-pill btn-outline-warning btn-lg px-4" href="work.html" role="button">Encontranos</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    <!-------------------------------------------------------Flechas del carrousel   -->
+                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <i class='bx bx-chevron-left'></i>
+                    <span class="visually-hidden">Ant.</span>
+                </a>
+                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <i class='bx bx-chevron-right'></i>
+                    <span class="visually-hidden">Prox.</span>
+                </a>
+            </div>
+			 <!-- bx-chevron-right y left son las puntas de flecha del carrousel -->
+            <!-- End slider -->
+
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+	
+    <!-- Start Service -->
+    <section class="service-wrapper py-3">
+        <div class="container-fluid pb-3">
+            <div class="row">
+                <h2 class="h2 text-center col-12 py-5 semi-bold-600">Nuestro Trabajo</h2>
+                <div class="service-header col-2 col-lg-3 text-end light-300">
+                    <span class="iconify" id="pata" data-icon="icons8:cat-footprint" data-inline="false"></span>
+                </div>
+                <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
+                    <h2 class="h3 pb-4 typo-space-line">Cambiamos la vida de miles de gatos</h2>
+                </div>
+            </div>
+            <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
+               y de personas.
+            </p>
+        </div>
+
+        <div class="service-tag py-5 bg-danger">
+            <div class="col-md-12">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark active shadow rounded-pill text-ligth px-4 
+						light-300" href="#" data-filter=".project">Todo</a>
+				<!-- btn-outline = boton transparente -->
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".graphic">Veterinarios</a>
+                    </li>
+                    <li class="filter-btn nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".ui">Ultimas adopciones</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-dark rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".branding">Árboles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container overflow-hidden py-5">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+
+            <!-- Comienzan los trabajos recientes -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui ">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="./assets/img/felixsi.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Felix</span>
+                            <p class="card-text">Él ya encontró a su familia, ¿Qué estás esperando?</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui ">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Kale.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Kale</span>
+                            <p class="card-text">Kale ya encontró una familia que le da mucho amor</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui ">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/benito1.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Benito</span>
+                            <p class="card-text">Benito es hijo de Limona y ya encontró un hogar</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui ">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/benito.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Tria</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/jorge.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Jorge Letsur</span>
+                            <p class="card-text">Radiólogo especialista en gatos</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/josefina.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Josefina Martinez</span>
+                            <p class="card-text">Experta en análisis de laboratorio</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/carla.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Carla Seguinde</span>
+                            <p class="card-text">Veterinaria de control especialista</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project  graphic graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/Selene.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Selene Canterbach</span>
+                            <p class="card-text">Veterinaria especialista de control</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+            
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project  branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/arbol1.png" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Estilo natural</span>
+                            <p class="card-text">Arbol estilo natural, pieza de diseño</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+                        <!-- Start Recent Work -->
+                        <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+                            <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                                <img class="card-img" src="./assets/img/arbol2.jpg" alt="Card image">
+                                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                                    <div class="service-work-content text-left text-light">
+                                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Estilo peludo</span>
+                                        <p class="card-text">Arbol estilo peludo, pieza de diseño</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- End Recent Work -->
+        </div>
+    </section>
+    <!-- End Service -->
+
+
+
+
+    
+
+    <!-- Start View Work -->
+    <section class="bg-danger">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-2 col-12 text-light align-items-center">
+                    <span class="iconify" id= "gati" data-icon="fluent:animal-cat-24-filled" data-inline="false"></span>
+                </div>
+                <div class="col-lg-7 col-12 text-light pt-2">
+                    <h3 class="h4 light-300">Transformá tu forma de adoptar</h3>
+                    <p class="light-300">Quis ipsum suspendisse ultrices gravida.</p>
+                </div>
+                <div class="col-lg-3 col-12 pt-4">
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End View Work -->
+
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="iconify" data-icon="emojione:smiling-cat-face-with-heart-eyes" data-inline="false"></span>
+                        <span class="text-light h5">Adopta</span><span class="text-danger h5 semi-bold-600">ME</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro centro de adopción</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+								href="index.html">Principal</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="work.html">Eventos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+								href="pricing.html">Gatos en adopción</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+							href="mailto:info@company.com">info@adoptame.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-danger py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 AdoptaME. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+							href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack  y SS</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+   <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>	
+ 
+   
+</body>
+
+</html>
